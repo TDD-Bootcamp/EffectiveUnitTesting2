@@ -4,14 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * 练习二：
- * 编写更多测试用例，注意独立性，每个函数只测一件事情。
- * 学会用try-catch方式捕获Exception，不要忘记fail()。
- * 用TDD方式修改Bug。另外再试一下在@Test注解中捕获异常。
- * 用IDE的重构命令来提取自定义断言。
- */
-
 public class BankingTest {
 
     private Account account;
@@ -44,7 +36,6 @@ public class BankingTest {
         account.withdraw(50L);
         //then
         assertEquals(49L, account.getBalance());
-
     }
 
 }
